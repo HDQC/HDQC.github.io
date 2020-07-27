@@ -1,0 +1,838 @@
+	<!--Title-->
+	<div class="container">
+  		<div class="row">
+    		<div class="col">
+            <div id="dark-theme-switcher" onClick="darkTheme()"></div>
+            <p id="deepSeaSiteButton">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#deepSeaSite" aria-expanded="false" aria-controls="deepSeaSite" onClick="deepSeaSiteButton()">
+              Deep-sea Site
+              </button>
+            </p>
+            <p id="seaOfAshButton">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seaOfAsh" aria-expanded="false" aria-controls="seaOfAsh" onClick="ashOfSeaButton()">
+              Sea of Ash
+              </button>
+            </p>
+      			<h3 class="text-center">Submersible Parts Calculator v2.2 (2/28/20)</h3>
+      			<h6 class="text-center">by <span class="name">Quadol Anamaex</span> of Lich</h6>
+    		</div>
+  		</div>
+
+      <div class="row">
+        <div class="col">
+          <div class="collapse" id="deepSeaSite" style="margin-bottom: 20px">
+            <div class="card card-body">
+              <table class="table table-sm table-borderless" style="margin-bottom: 0">
+                <thead></thead>
+                <tbody style="font-size: 14px">
+                  <h6 class="text-center" style="margin-top: -10px; margin-bottom: 15px">by <span class="name">Stouter Taru</span> of Exodus and <span class="name">Norri Matora</span> of Ultros</h6>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck1">
+                        <label for="tripCheck1" class="form-check-label">(A) The Ivory Shoals</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck7">
+                        <label for="tripCheck7" class="form-check-label">(G) The Umrella Narrow</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck13">
+                        <label for="tripCheck13" class="form-check-label">(M) Deep-sea Site 4</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck19">
+                        <label for="tripCheck19" class="form-check-label">(S) Deep-sea Site 5</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck25">
+                        <label for="tripCheck25" class="form-check-label">(Y) Flickering Dip</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck2">
+                        <label for="tripCheck2" class="form-check-label">(B) Deep-sea Site 1</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck8">
+                        <label for="tripCheck8" class="form-check-label">(H) Offender's Rot</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck14">
+                        <label for="tripCheck14" class="form-check-label">(N) The Central Rimilala Trench</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck20">
+                        <label for="tripCheck20" class="form-check-label">(T) Purgatory</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck26">
+                        <label for="tripCheck26" class="form-check-label">(Z) The Wreckage of the Headway</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck3">
+                        <label for="tripCheck3" class="form-check-label">(C) Deep-sea Site 2</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck9">
+                        <label for="tripCheck9" class="form-check-label">(I) Neolith Island</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck15">
+                        <label for="tripCheck15" class="form-check-label">(O) The Wreckage of Discovery I</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck21">
+                        <label for="tripCheck21" class="form-check-label">(U) Deep-sea Site 6</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck27">
+                        <label for="tripCheck27" class="form-check-label">(AA) The Upwell</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck4">
+                        <label for="tripCheck4" class="form-check-label">(D) The Lightless Basin</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck10">
+                        <label for="tripCheck10" class="form-check-label">(J) Unidentified Derelict</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck16">
+                        <label for="tripCheck16" class="form-check-label">(P) Komura</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck22">
+                        <label for="tripCheck22" class="form-check-label">(V) The Rimilala Shelf</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck28">
+                        <label for="tripCheck28" class="form-check-label">(AB) The Rimilala Trench Bottom</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck5">
+                        <label for="tripCheck5" class="form-check-label">(E) Deep-sea Site 3</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck11">
+                        <label for="tripCheck11" class="form-check-label">(K) The Cobalt Shoals</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck17">
+                        <label for="tripCheck17" class="form-check-label">(Q) Kanayama</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck23">
+                        <label for="tripCheck23" class="form-check-label">(W) Deep-sea Site 7</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck29">
+                        <label for="tripCheck29" class="form-check-label">(AC) Stone Temple</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck6">
+                        <label for="tripCheck6" class="form-check-label">(F) The Southern Rimilala Trench</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck12">
+                        <label for="tripCheck12" class="form-check-label">(L) The Mystic Basin</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck18">
+                        <label for="tripCheck18" class="form-check-label">(R) Concealed Bay</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck24">
+                        <label for="tripCheck24" class="form-check-label">(X) Glittersand Basin</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck30">
+                        <label for="tripCheck30" class="form-check-label">(AD) Sunken Vault</label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p id="result" style="font-size: 14px; height: 20px; margin-left: 5px; margin-top: 15px; font-weight: bold; margin-bottom: 0"></p>
+              <p id="minRange" style="font-size: 14px; height: 20px; margin-left: 5px; margin-top: 15px; font-weight: bold; margin-bottom: 0"></p>
+            </div>
+          </div>
+
+          <div class="collapse" id="seaOfAsh" style="margin-bottom: 20px">
+            <div class="card card-body">
+              <table class="table table-sm table-borderless" style="margin-bottom: 0">
+                <thead></thead>
+                <tbody style="font-size: 14px">
+                  <h6 class="text-center" style="margin-top: -10px; margin-bottom: 15px">by <span class="name">Stouter Taru</span> of Exodus and <span class="name">Norri Matora</span> of Ultros</h6>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck32">
+                        <label for="tripCheck32" class="form-check-label">(A) South Isle of Zozonan</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck36">
+                        <label for="tripCheck36" class="form-check-label">(E) The Southern Charnel Trench</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck40">
+                        <label for="tripCheck40" class="form-check-label">(I) The Central Charnel Trench</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck44">
+                        <label for="tripCheck44" class="form-check-label">(M) The Lone Glove</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck48">
+                        <label for="tripCheck48" class="form-check-label">(Q) Nald'thal's Pipe</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck33">
+                        <label for="tripCheck33" class="form-check-label">(B) Wreckage of the Windwalker</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck37">
+                        <label for="tripCheck37" class="form-check-label">(F) Sea of Ash 2</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck41">
+                        <label for="tripCheck41" class="form-check-label">(J) The Catacombs of the Father</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck45">
+                        <label for="tripCheck45" class="form-check-label">(N) Coldtoe Isle</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck49">
+                        <label for="tripCheck49" class="form-check-label">(R) The Slipped Anchor</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck34">
+                        <label for="tripCheck34" class="form-check-label">(C) North Isle of Zozonan</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck38">
+                        <label for="tripCheck38" class="form-check-label">(G) Sea of Ash 3</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck42">
+                        <label for="tripCheck42" class="form-check-label">(K) Sea of Ash 4</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck46">
+                        <label for="tripCheck46" class="form-check-label">(O) Smuggler's Knot</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck50">
+                        <label for="tripCheck50" class="form-check-label">(S) Glutton's Belly</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck35">
+                        <label for="tripCheck35" class="form-check-label">(D) Sea of Ash 1</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck39">
+                        <label for="tripCheck39" class="form-check-label">(H) Ascetic's Demis</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck43">
+                        <label for="tripCheck43" class="form-check-label">(L) The Midden Pit</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck47">
+                        <label for="tripCheck47" class="form-check-label">(P) The Open Robe</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tripPlanner(this)" id="tripCheck51">
+                        <label for="tripCheck51" class="form-check-label">(T) The Blue Hole</label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p id="result2" style="font-size: 14px; height: 20px; margin-left: 5px; margin-top: 15px; font-weight: bold; margin-bottom: 0"></p>
+              <p id="minRange2" style="font-size: 14px; height: 20px; margin-left: 5px; margin-top: 15px; font-weight: bold; margin-bottom: 0"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	<!--Checkboxes-->
+  		<div class="row">
+  			<div class="col">
+				<table class="table table-sm table-borderless d-inline" id="checkboxes-table">
+					<thead>
+						<tr>
+							<th scope="col">								
+								<div class="custom-control custom-checkbox d-inline">
+                	<input type="checkbox" class="custom-control-input part-4-version" id="customCheck51" onChange="setsSwitcher(this)" checked>
+                	<label class="custom-control-label" for="customCheck51">4.x</label>
+              	</div>
+								<div class="custom-control custom-checkbox d-inline">
+                	<input type="checkbox" class="custom-control-input part-5-version" id="customCheck52" onChange="setsSwitcher(this)" checked>
+                	<label class="custom-control-label" for="customCheck52">5.x</label>
+              	</div>
+								<div class="custom-control custom-checkbox d-inline">
+                	<input type="checkbox" class="custom-control-input" id="customCheck53" onChange="setsSwitcher(this)" checked>
+                	<label class="custom-control-label" for="customCheck53">All</label>
+              	</div>
+							</th>
+							<th scope="col">Hull</th>
+							<th scope="col">Stern</th>
+							<th scope="col">Bow</th>
+							<th scope="col">Bridge</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row" id="shark">Shark</th>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version shark-type" id="customCheck1" onChange="partFilter(1, this, 'S ')" checked>
+                  					<label class="custom-control-label" for="customCheck1"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version shark-type" id="customCheck2" onChange="partFilter(2, this, 'S ')" checked>
+                  					<label class="custom-control-label" for="customCheck2"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version shark-type" id="customCheck3" onChange="partFilter(3, this, 'S ')" checked>
+                  					<label class="custom-control-label" for="customCheck3"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version shark-type" id="customCheck4" onChange="partFilter(4, this, 'S ')" checked>
+                  					<label class="custom-control-label" for="customCheck4"></label>
+              					</div>
+              				</td>
+							<td class="here">
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version set" id="customCheck41" onChange="setSwitcher(this)" checked>
+                  					<label class="custom-control-label" for="customCheck41"></label>
+              					</div>
+              				</td>
+						</tr>
+						<tr>
+							<th scope="row">Unkiu</th>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version unkiu-type" id="customCheck5" onChange="partFilter(1, this, 'U ')" checked>
+                  					<label class="custom-control-label" for="customCheck5"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version unkiu-type" id="customCheck6" onChange="partFilter(2, this, 'U ')" checked>
+                  					<label class="custom-control-label" for="customCheck6"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version unkiu-type" id="customCheck7" onChange="partFilter(3, this, 'U ')" checked>
+                  					<label class="custom-control-label" for="customCheck7"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version unkiu-type" id="customCheck8" onChange="partFilter(4, this, 'U ')" checked>
+                  					<label class="custom-control-label" for="customCheck8"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version set" id="customCheck42" onChange="setSwitcher(this)" checked>
+                  					<label class="custom-control-label" for="customCheck42"></label>
+              					</div>
+              				</td>
+						</tr>
+						<tr>
+							<th scope="row">Whale</th>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version whale-type" id="customCheck9" onChange="partFilter(1, this, 'W ')" checked>
+                  					<label class="custom-control-label" for="customCheck9"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version whale-type" id="customCheck10" onChange="partFilter(2, this, 'W ')" checked>
+                  					<label class="custom-control-label" for="customCheck10"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version whale-type" id="customCheck11" onChange="partFilter(3, this, 'W ')" checked>
+                  					<label class="custom-control-label" for="customCheck11"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version whale-type" id="customCheck12" onChange="partFilter(4, this, 'W ')" checked>
+                  					<label class="custom-control-label" for="customCheck12"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version set" id="customCheck43" onChange="setSwitcher(this)" checked>
+                  					<label class="custom-control-label" for="customCheck43"></label>
+              					</div>
+              				</td>
+						</tr>
+						<tr>
+							<th scope="row">Coelacanth</th>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version coelacanth-type" id="customCheck13" onChange="partFilter(1, this, 'C ')" checked>
+                  					<label class="custom-control-label" for="customCheck13"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version coelacanth-type" id="customCheck14" onChange="partFilter(2, this, 'C ')" checked>
+                  					<label class="custom-control-label" for="customCheck14"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version coelacanth-type" id="customCheck15" onChange="partFilter(3, this, 'C ')" checked>
+                  					<label class="custom-control-label" for="customCheck15"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version coelacanth-type" id="customCheck16" onChange="partFilter(4, this, 'C ')" checked>
+                  					<label class="custom-control-label" for="customCheck16"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version set" id="customCheck44" onChange="setSwitcher(this)" checked>
+                  					<label class="custom-control-label" for="customCheck44"></label>
+              					</div>
+              				</td>
+						</tr>
+						<tr>
+							<th scope="row">Syldra</th>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version syldra-type" id="customCheck17" onChange="partFilter(1, this, 'Y ')" checked>
+                  					<label class="custom-control-label" for="customCheck17"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version syldra-type" id="customCheck18" onChange="partFilter(2, this, 'Y ')" checked>
+                  					<label class="custom-control-label" for="customCheck18"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version syldra-type" id="customCheck19" onChange="partFilter(3, this, 'Y ')" checked>
+                  					<label class="custom-control-label" for="customCheck19"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version syldra-type" id="customCheck20" onChange="partFilter(4, this, 'Y ')" checked>
+                  					<label class="custom-control-label" for="customCheck20"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-4-version set" id="customCheck45" onChange="setSwitcher(this)" checked>
+                  					<label class="custom-control-label" for="customCheck45"></label>
+              					</div>
+              				</td>
+						</tr>
+						<tr>
+							<th scope="row">MShark</th>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mshark-type" id="customCheck21" onChange="partFilter(1, this, 'S\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck21"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mshark-type" id="customCheck22" onChange="partFilter(2, this, 'S\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck22"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mshark-type" id="customCheck23" onChange="partFilter(3, this, 'S\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck23"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mshark-type" id="customCheck24" onChange="partFilter(4, this, 'S\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck24"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version set" id="customCheck46" onChange="setSwitcher(this)" checked>
+                  					<label class="custom-control-label" for="customCheck46"></label>
+              					</div>
+              				</td>
+						</tr>
+						<tr>
+							<th scope="row">MUnkiu</th>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version munkiu-type" id="customCheck25" onChange="partFilter(1, this, 'U\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck25"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version munkiu-type" id="customCheck26" onChange="partFilter(2, this, 'U\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck26"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version munkiu-type" id="customCheck27" onChange="partFilter(3, this, 'U\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck27"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version munkiu-type" id="customCheck28" onChange="partFilter(4, this, 'U\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck28"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version set" id="customCheck47" onChange="setSwitcher(this)" checked>
+                  					<label class="custom-control-label" for="customCheck47"></label>
+              					</div>
+              				</td>
+						</tr>
+						<tr>
+							<th scope="row">MWhale</th>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mwhale-type" id="customCheck29" onChange="partFilter(1, this, 'W\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck29"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mwhale-type" id="customCheck30" onChange="partFilter(2, this, 'W\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck30"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mwhale-type" id="customCheck31" onChange="partFilter(3, this, 'W\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck31"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mwhale-type" id="customCheck32" onChange="partFilter(4, this, 'W\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck32"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version set" id="customCheck48" onChange="setSwitcher(this)" checked>
+                  					<label class="custom-control-label" for="customCheck48"></label>
+              					</div>
+              				</td>
+						</tr>
+						<tr>
+							<th scope="row">MCoelacanth</th>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mcoelacanth-type" id="customCheck33" onChange="partFilter(1, this, 'C\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck33"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mcoelacanth-type" id="customCheck34" onChange="partFilter(2, this, 'C\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck34"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mcoelacanth-type" id="customCheck35" onChange="partFilter(3, this, 'C\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck35"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version mcoelacanth-type" id="customCheck36" onChange="partFilter(4, this, 'C\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck36"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version set" id="customCheck49" onChange="setSwitcher(this)" checked>
+                  					<label class="custom-control-label" for="customCheck49"></label>
+              					</div>
+              				</td>
+						</tr>
+						<tr>
+							<th scope="row">MSyldra</th>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version msyldra-type" id="customCheck37" onChange="partFilter(1, this, 'Y\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck37"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version msyldra-type" id="customCheck38" onChange="partFilter(2, this, 'Y\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck38"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version msyldra-type" id="customCheck39" onChange="partFilter(3, this, 'Y\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck39"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version msyldra-type" id="customCheck40" onChange="partFilter(4, this, 'Y\\+ ')" checked>
+                  					<label class="custom-control-label" for="customCheck40"></label>
+              					</div>
+              				</td>
+							<td>
+								<div class="custom-control custom-checkbox text-center">
+                  					<input type="checkbox" class="custom-control-input part-5-version set" id="customCheck50" onChange="setSwitcher(this)" checked>
+                  					<label class="custom-control-label" for="customCheck50"></label>
+              					</div>
+              				</td>
+						</tr>
+					</tbody>
+				</table>
+  			</div>
+
+  			<div class="col">
+  				<table class="table table-sm table-borderless" id="sliders-table">
+  					<thead class="">  						
+						<th scope="col"><div class="default-btn all" onClick="defaultAllBtn(this)"></div></th>
+						<th scope="col"></th>
+						<th scope="col">Min</th>
+						<th scope="col">Max</th>
+						<th scope="col">Precisely</th>
+  					</thead>
+  					<tbody>
+  						<tr>
+							<th scope="row">Cost</th>
+  							<td><input id="cost" type="text" class="slider" value="" data-slider-min="20" data-slider-max="80" data-slider-step="1" data-slider-value="[20,80]" onChange="setFieldsVal(this)"/></td>
+  							<td><input class="form-control form-control-sm" type="text" value="20" id="costMinVal" onChange="setSliderMinVal(this)" data-default="20" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" value="80" id="costMaxVal" onChange="setSliderMaxVal(this)" data-default="80" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" id="costExactVal" onChange="setSliderExactVal(this)"></td>
+  							<td><div class="default-btn" onClick="defaultBtn(this)"></div></td>
+  						</tr>
+  						<tr>
+							<th scope="row">Surv</th>
+  							<td><input id="surv" type="text" class="slider" value="" data-slider-min="-20" data-slider-max="210" data-slider-step="5" data-slider-value="[-20,210]" onChange="setFieldsVal(this)"/></td>
+  							<td><input class="form-control form-control-sm" type="text" value="-20" id="survMinVal" onChange="setSliderMinVal(this)" data-default="-20" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" value="210" id="survMaxVal" onChange="setSliderMaxVal(this)" data-default="210" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" id="survExactVal" onChange="setSliderExactVal(this)"></td>
+  							<td><div class="default-btn" onClick="defaultBtn(this)"></div></td>
+  						</tr>
+  						<tr>
+							<th scope="row">Retr</th>
+  							<td><input id="retr" type="text" class="slider" value="" data-slider-min="5" data-slider-max="260" data-slider-step="5" data-slider-value="[5,260]" onChange="setFieldsVal(this)"/></td>
+  							<td><input class="form-control form-control-sm" type="text" value="5" id="retrMinVal" onChange="setSliderMinVal(this)" data-default="5" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" value="260" id="retrMaxVal" onChange="setSliderMaxVal(this)" data-default="260" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" id="retrExactVal" onChange="setSliderExactVal(this)"></td>
+  							<td><div class="default-btn" onClick="defaultBtn(this)"></div></td>
+  						</tr>
+  						<tr>
+							<th scope="row">Speed</th>
+  							<td><input id="speed" type="text" class="slider" value="" data-slider-min="-20" data-slider-max="185" data-slider-step="5" data-slider-value="[-20,185]" onChange="setFieldsVal(this)"/></td>
+  							<td><input class="form-control form-control-sm" type="text" value="-20" id="speedMinVal" onChange="setSliderMinVal(this)" data-default="-20" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" value="185" id="speedMaxVal" onChange="setSliderMaxVal(this)" data-default="185" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" id="speedExactVal" onChange="setSliderExactVal(this)"></td>
+  							<td><div class="default-btn" onClick="defaultBtn(this)"></div></td>
+  						</tr>
+  						<tr>
+							<th scope="row">Range</th>
+  							<td><input id="range" type="text" class="slider" value="" data-slider-min="-65" data-slider-max="235" data-slider-step="5" data-slider-value="[-65,235]" onChange="setFieldsVal(this)"/></td>
+  							<td><input class="form-control form-control-sm" type="text" value="-65" id="rangeMinVal" onChange="setSliderMinVal(this)" data-default="-65" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" value="235" id="rangeMaxVal" onChange="setSliderMaxVal(this)" data-default="235" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" id="rangeExactVal" onChange="setSliderExactVal(this)"></td>
+  							<td><div class="default-btn" onClick="defaultBtn(this)"></div></td>
+  						</tr>
+  						<tr>
+							<th scope="row">Favor</th>
+  							<td><input id="favor" type="text" class="slider" value="" data-slider-min="30" data-slider-max="185" data-slider-step="5" data-slider-value="[30,185]" onChange="setFieldsVal(this)"/></td>
+  							<td><input class="form-control form-control-sm" type="text" value="30" id="favorMinVal" onChange="setSliderMinVal(this)" data-default="30" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" value="185" id="favorMaxVal" onChange="setSliderMaxVal(this)" data-default="185" onClick="this.select();"></td>
+  							<td><input class="form-control form-control-sm" type="text" id="favorExactVal" onChange="setSliderExactVal(this)"></td>
+  							<td><div class="default-btn" onClick="defaultBtn(this)"></div></td>
+  						</tr>
+              <tr>
+              <th scope="row">Rank</th>
+                <td><input id="rank" type="text" class="slider" data-slider-min="1" data-slider-max="70" data-slider-value="[1, 70]" data-slider-ticks="[1, 15, 25, 35, 45, 50, 70]" data-slider-lock-to-ticks="true" onChange="setFieldsVal(this)"/></td>
+                <td><input class="form-control form-control-sm" type="text" value="1" id="rankMinVal" onChange="setSliderMinVal(this)" data-default="1" onClick="this.select();"></td>
+                <td><input class="form-control form-control-sm" type="text" value="70" id="rankMaxVal" onChange="setSliderMaxVal(this)" data-default="70" onClick="this.select();"></td>
+                <td><input class="form-control form-control-sm" type="text" id="rankExactVal" onChange="setSliderExactVal(this)"></td>
+                <td><div class="default-btn" onClick="defaultBtn(this)"></div></td>
+              </tr>
+  						<tr>
+							<th scope="row">Bonus</th>
+  							<td><input id="bonus" type="text" class="slider" value="" data-slider-min="50" data-slider-max="70" data-slider-step="1" data-slider-value="50" onChange="setBonusVal(this)"/></td>
+  							<td></td>
+  							<td></td>
+  							<td><input class="form-control form-control-sm" type="text" value="50" id="bonusVal" onChange="setBonusSliderVal()" onClick="this.select();"></td>
+  							<td><div class="default-btn" onClick="defaultBonusBtn()"></div></td>
+  						</tr>
+  					</tbody>
+  				</table>
+  			</div>
+  		</div>
+		
+		<!--Table-->
+  		<div class="row" id="table">
+  			<div class="col">          
+				<table class="table table-striped table-bordered text-center table-hover order-column" id="combinations" style="width: 100%">
+					<thead>
+						<tr>
+							<th scope="col">ID</th>
+							<th scope="col">Hull</th>
+							<th scope="col">Stern</th>
+							<th scope="col">Bow</th>
+							<th scope="col">Bridge</th>
+							<th scope="col">Cost</th>
+							<th scope="col">Surv</th>
+							<th scope="col">Retr</th>
+							<th scope="col">Spd</th>
+							<th scope="col">Rng</th>
+							<th scope="col">Fvr</th>
+              <th scope="col">Rank</th>
+              <th scope="col">Time</th>
+              <th scope="col">+</th>
+						</tr>							
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+  		</div>
+	</div>
